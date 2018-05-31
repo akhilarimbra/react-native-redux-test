@@ -7,6 +7,7 @@ import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 
 import reducers from './reducers'
+import LibraryList from './components/LibraryList'
 import {
   Header
 } from './components/widgets'
@@ -17,6 +18,7 @@ class App extends Component {
       <Provider store={createStore(reducers)}>
         <View>
           <Header title='#tech_stack' />
+          <LibraryList />
         </View>
       </Provider>
     )
